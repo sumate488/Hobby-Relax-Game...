@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body.dark {
+    background: #0f0f0f;
+    color: white;
+}
+
+.stats p {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 18px;
+}
+
+/* Game Area */
+.game-area {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid #444;
+    border-radius: 10px;
+    cursor: crosshair;
+}
+
+/* Target */
+.target {
+    position: absolute;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Head */
+.target::after {
+    content: "";
+    width: 35%;
+    height: 35%;
+    background: darkred;
+    border-radius: 50%;
+}
+
+/* Power-up */
+.power {
+    background: gold !important;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
